@@ -16,10 +16,8 @@ jobs:
           key: ${{ secrets.REMOTE_SSH_KEY }}
           port: ${{ secrets.REMOTE_SSH_PORT }}
           script: |
-            sh '''
             pwd
             cd hermes
             git pull
             docker-compose up -d
-            '''
             
